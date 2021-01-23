@@ -1,0 +1,23 @@
+{
+  "name": "supercoupon/api",
+  "description": "SuperCoupon API",
+  "type": "project",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Ben Rutland Web",
+      "email": "info@benrutlandweb.co.uk"
+    }
+  ],
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "require": {
+    "php": "^7.3",
+    "brw/atomic-framework": "9999999-dev"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "app/"
+    }
+  }
+}
