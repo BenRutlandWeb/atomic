@@ -2,5 +2,5 @@
 
 return [
 
-    'path' => base_path('views'),
+    'path' => base_path('templates'),
 ];
