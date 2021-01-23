@@ -1,3 +1,5 @@
+![Atomic](screenshot.png)
+
 # Atomic
 
 WordPress theme for elegant development.
