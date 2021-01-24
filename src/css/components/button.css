@@ -1,0 +1,11 @@
+.button {
+  @apply inline-block border py-2 px-4 rounded uppercase font-bold transition-colors duration-300 focus:outline-none focus:ring-2;
+}
+
+.button--primary {
+  @apply border-tomato-300 text-tomato-700 hover:bg-tomato-700 hover:text-white focus:ring-tomato-300;
+}
+
+.button--secondary {
+  @apply border-steel-200 text-steel-900 hover:bg-steel-900 hover:border-steel-900 hover:text-white focus:ring-steel-500;
+}
