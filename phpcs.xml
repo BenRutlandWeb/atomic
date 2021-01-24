@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<ruleset name="Atomic PSR-12 Standard" namespace="Atomic">
+
+    <description>Atomic PSR-12 standard</description>
+
+    <file>.</file>
+
+    <exclude-pattern>*/vendor/*</exclude-pattern>
+
+    <arg name="extensions" value="php,inc" />
+    <arg name="colors"/>
+
+    <ini name="memory_limit" value="64M"/>
+
+    <rule ref="psr12"/>
+
+    <rule ref="Internal.NoCodeFound">
+        <severity>0</severity>
+    </rule>
+
+</ruleset>
