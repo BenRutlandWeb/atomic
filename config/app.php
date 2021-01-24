@@ -14,13 +14,13 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Asset URL
+    | Asset Directory
     |--------------------------------------------------------------------------
     |
-    | This URL is used by the URL generator when creating asset URLs.
+    | This directory is used by the URL generator when creating asset URLs.
     |
     */
-    'asset_url' => get_template_directory_uri() . '/assets/',
+    'asset_url' => 'assets',
 
     /*
     |--------------------------------------------------------------------------
@@ -73,6 +73,7 @@ return [
         'Config'     => \Atomic\Support\Facades\Config::class,
         'Console'    => \Atomic\Support\Facades\Console::class,
         'Event'      => \Atomic\Support\Facades\Event::class,
+        'File'       => \Atomic\Support\Facades\File::class,
         'Filter'     => \Atomic\Support\Facades\Filter::class,
         'Hash'       => \Atomic\Support\Hash::class,
         'Mail'       => \Atomic\Support\Facades\Mail::class,

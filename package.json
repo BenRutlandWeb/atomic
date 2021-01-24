@@ -1,0 +1,38 @@
+{
+  "name": "atomic",
+  "version": "0.1.0",
+  "description": "WordPress base theme built with the Atomic Framework",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.4.0",
+    "cross-env": "^7.0.3",
+    "laravel-mix": "^6.0.10",
+    "postcss": "^8.2.4",
+    "postcss-import": "^14.0.0",
+    "postcss-nested": "^5.0.3",
+    "tailwindcss": "^2.0.2"
+  },
+  "scripts": {
+    "dev": "npm run development",
+    "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "npm run development -- --watch",
+    "prod": "npm run production",
+    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --config=node_modules/laravel-mix/setup/webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BenRutlandWeb/atomic.git"
+  },
+  "keywords": [
+    "wordpress",
+    "theme",
+    "atomic"
+  ],
+  "author": "Ben Rutland",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BenRutlandWeb/atomic/issues"
+  },
+  "homepage": "https://github.com/BenRutlandWeb/atomic#readme"
+}
