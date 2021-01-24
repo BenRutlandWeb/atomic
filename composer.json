@@ -15,6 +15,9 @@
     "php": "^7.3",
     "brw/atomic-framework": "9999999-dev"
   },
+  "require-dev": {
+    "squizlabs/php_codesniffer": "^3.5"
+  },
   "autoload": {
     "psr-4": {
       "App\\": "app/"
