@@ -2,13 +2,41 @@
 
 return [
 
+    /*
+    |--------------------------------------------------------------------------
+    | Encryption Key
+    |--------------------------------------------------------------------------
+    |
+    | This key is used by the Atomic hash service to add a "pepper" to the hash.
+    |
+    */
     'key' => env('AUTH_KEY'),
 
+    /*
+    |--------------------------------------------------------------------------
+    | Asset URL
+    |--------------------------------------------------------------------------
+    |
+    | This URL is used by the URL generator when creating asset URLs.
+    |
+    */
     'asset_url' => get_template_directory_uri() . '/assets/',
 
+    /*
+    |--------------------------------------------------------------------------
+    | Autoloaded Service Providers
+    |--------------------------------------------------------------------------
+    |
+    | The service providers listed here will be automatically loaded on the
+    | request to your application. Feel free to add your own services to
+    | this array to grant expanded functionality to your applications.
+    |
+    */
     'providers' => [
 
-        // Atomic providers
+        /**
+         * Atomic framework service providers
+         */
         \Atomic\Auth\AuthServiceProvider::class,
         \Atomic\Console\ConsoleServiceProvider::class,
         \Atomic\Filesystem\FilesystemServiceProvider::class,
@@ -16,13 +44,25 @@ return [
         \Atomic\View\ViewServiceProvider::class,
         \Atomic\WordPress\WordPressServiceProvider::class,
 
-        // app providers
+        /**
+         * Theme service providers
+         */
         \App\Providers\EventServiceProvider::class,
         \App\Providers\RouteServiceProvider::class,
         \App\Providers\ShortcodeServiceProvider::class,
 
     ],
 
+    /*
+    |--------------------------------------------------------------------------
+    | Class Aliases
+    |--------------------------------------------------------------------------
+    |
+    | This array of class aliases will be registered when this application
+    | is started. However, feel free to register as many as you wish as
+    | the aliases are "lazy" loaded so they don't hinder performance.
+    |
+    */
     'aliases' => [
         'App'        => \Atomic\Support\Facades\App::class,
         'Action'     => \Atomic\Support\Facades\Action::class,
