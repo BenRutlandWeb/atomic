@@ -62,4 +62,4 @@
 
 </main>
 
-<?php echo view('footer'); ?>
+<?php echo view('footer');
