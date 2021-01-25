@@ -1,16 +1,23 @@
 <?php echo view('header'); ?>
 
-<main class="h-screen flex items-center">
-    <div class="w-full container gap-y-6 justify-items-start">
-        <a href="<?php echo url()->home(); ?>" class="button button--secondary">
-            <?php _e('Go home'); ?>
-        </a>
-        <h1 class="text-4xl sm:text-6xl font-atomic text-steel-900">
-            <?php _e('404 | Not found'); ?>
-        </h1>
-        <span class="text-tomato-300">
-            <?php echo view('atomic-logo'); ?>
-        </span>
+<main class="text-gray-600 body-font overflow-hidden flex-1">
+    <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+        <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+
+            <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900 font-atomic">
+                <?php _e('404 | Not found', 'atomic'); ?>
+            </h1>
+            <p class="mb-8 leading-relaxed">
+                <?php _e('Sorry, the requested content was not found', 'atomic'); ?>
+            </p>
+            <a href="<?php echo url()->home(); ?>" class="inline-flex text-white bg-primary border-0 py-2 px-6 focus:outline-none hover:bg-secondary rounded text-lg focus:ring-2 focus:ring-offset-2">
+                <?php _e('Go home', 'atomic'); ?>
+            </a>
+        </div>
+        <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+            <img class="object-cover object-center rounded" alt="hero" src="<?php echo asset('img/screenshot.png'); ?>">
+        </div>
+
     </div>
 </main>
 

@@ -24,7 +24,7 @@ mix
   .postCss("src/css/app.css", "css", postCss)
   .postCss("src/css/editor.css", "css", postCss)
 
-  .copy(["src/img"], "assets/img")
+  .copy("src/img", "assets/img")
 
   .setPublicPath("assets")
 
