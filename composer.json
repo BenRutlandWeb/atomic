@@ -19,5 +19,11 @@
     "psr-4": {
       "App\\": "app/"
     }
+  },
+  "scripts": {
+    "post-create-project-cmd": [
+      "npm install",
+      "npm run dev"
+    ]
   }
 }
