@@ -4,7 +4,10 @@
 
 @import "tailwindcss/utilities";
 
-@layer components {
-  @import "components/button";
-  @import "components/container";
+/* the following styles wont be purged */
+.menu-item > a {
+  @apply text-gray-700 border-0 py-3 px-4 focus:outline-none hover:bg-gray-200 rounded text-lg focus:ring-2 focus:ring-offset-2;
+}
+.current-menu-item > a {
+  @apply text-white bg-primary hover:bg-secondary;
 }

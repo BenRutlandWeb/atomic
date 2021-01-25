@@ -15,9 +15,6 @@ class EventServiceProvider extends ServiceProvider
         'after_setup_theme' => [
             \App\Listeners\RegisterMenus::class,
         ],
-        'wp_nav_menu_items' => [
-            \App\Listeners\MenuAuthItem::class,
-        ],
     ];
 
     /**
