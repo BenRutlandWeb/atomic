@@ -11,7 +11,10 @@ class Kernel extends BaseKernel
      *
      * @var array
      */
-    protected $middleware = [];
+    protected $middleware = [
+        \App\Http\Middleware\TrimStrings::class,
+        \App\Http\Middleware\ConvertEmptyStringsToNull::class,
+    ];
 
     /**
      * The application's route middleware groups.
@@ -20,7 +23,9 @@ class Kernel extends BaseKernel
      */
     protected $middlewareGroups = [
         'api' => [],
-        'ajax' => [],
+        'ajax' => [
+            \App\Http\Middleware\VerifyCsrfToken::class,
+        ],
     ];
 
     /**

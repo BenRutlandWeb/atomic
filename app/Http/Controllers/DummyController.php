@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use Atomic\Http\Request;
 use Atomic\Routing\Controller;
+use App\Http\Requests\RegisterRequest;
 
 class DummyController extends Controller
 {
@@ -12,7 +12,7 @@ class DummyController extends Controller
      *
      * @return string
      */
-    public function __invoke(Request $request)
+    public function __invoke(RegisterRequest $request)
     {
         return $request;
     }

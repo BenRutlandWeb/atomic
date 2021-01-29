@@ -40,8 +40,10 @@ return [
         \Atomic\Auth\AuthServiceProvider::class,
         \Atomic\Console\ConsoleServiceProvider::class,
         \Atomic\Filesystem\FilesystemServiceProvider::class,
+        \Atomic\Http\FormRequestServiceProvider::class,
         \Atomic\Mail\MailServiceProvider::class,
         \Atomic\View\ViewServiceProvider::class,
+        \Atomic\Validation\ValidationServiceProvider::class,
         \Atomic\WordPress\WordPressServiceProvider::class,
 
         /**
